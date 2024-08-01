@@ -23,7 +23,7 @@ public class Testing // testing class
 
 
         Debug.Assert(totalScore >= 0, "Total score should be a positive number!"); // debugging to check the score is positive
-        Debug.Assert(finalRollTotal == 7, "The final roll total should be exactly 7!"); // Debug.Assert(rollTotal == 7, "Total score should be exactly 7!"); // debugging to check the dice rolls are exactly 7
+        Debug.Assert(finalRollTotal == 7, "The final roll total should be exactly 7!");// debugging to check the dice rolls are exactly 7
 
 
         Console.WriteLine("SevensOut Test Completed, no issues detected"); // test completed

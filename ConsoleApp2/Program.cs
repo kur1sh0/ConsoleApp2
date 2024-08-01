@@ -44,9 +44,9 @@
                         break;
                 }
             }
-            catch (Exception ex) // error handling
+            catch (Exception exit) // error handling
             {
-                Console.WriteLine($"\nAn Error Occurred: {ex.Message}\n"); // error handling
+                Console.WriteLine($"\nAn Error Occurred: {exit.Message}\n"); // error handling
             }
         }
     }

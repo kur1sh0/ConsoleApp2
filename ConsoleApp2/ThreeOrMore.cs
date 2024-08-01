@@ -182,7 +182,7 @@ public class ThreeOrMore : Game // inherits from Game class
             highestValue = groups.First().Key; // updates most common value rolled by the dice
 
             Console.WriteLine($"Most Common Dice Roll is : {highestValue}, It appears: {highestCount} times"); // reads the highest dice roll & how many times it occurs
-            Console.WriteLine($"Roll Sum is: {rollSum}\n"); // adds them all together and presents it to the user
+            Console.WriteLine($"Roll Sum is: {rollSum}"); // adds them all together and presents it to the user
 
             if (highestCount == 3) totalScore += 3; // if three-of-a-kind, add 3 to totalScore
             if (highestCount == 4) totalScore += 6; // if four-of-a-kind, add 6 to totalScore
@@ -190,6 +190,7 @@ public class ThreeOrMore : Game // inherits from Game class
             if (highestCount <= 2) totalScore += 0; // error handling without debug.assert
             if (highestCount >= 6) totalScore += 0; // error handling without debug.assert
 
+            Console.WriteLine($"Current Total is: {totalScore}\n");
         }
         return totalScore; // return
 
